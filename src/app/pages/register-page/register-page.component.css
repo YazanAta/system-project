@@ -1,0 +1,32 @@
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+
+    .overlay{
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 173, 255, 0.29);
+        overflow: hidden;  
+        box-sizing: border-box;
+    }
+    .left {
+        color: #FFFFFF;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../../../assets/sign up.jpg");
+        overflow: hidden;
+      }
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 4px rgba(0, 173, 255, 0.45);
+    border: 0px;
+}

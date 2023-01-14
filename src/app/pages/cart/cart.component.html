@@ -1,0 +1,21 @@
+<div class="row container" >
+  <div class="card col-xl-4 col-lg-4 col-sm-4 mb-4" style="width: 18rem;" *ngFor="let item of myItems">
+      <img class="card-img-top" src="{{item.Img}}" alt="Card image cap" style="width: 260px; height: 280px;">
+      <div class="card-body">
+      <h5 class="card-title">{{item.clubName}}'s {{item.Type}}</h5>
+      <hr>
+      <p class="card-text price">${{item.Price}}</p>
+      <div style="display: flex; flex-direction: column; justify-content: space-between;">
+        <p class="card-text">{{item.size}}</p>
+      </div>
+      </div>
+      <div class="trash"><button class="btn btn-primary" (click) = "removeItem(item)"><i class="bi bi-trash3"></i></button></div>
+  </div>
+</div>
+<div class="proceed-payment">
+  <h5 class="text-center">Total Price is {{total}}</h5>
+  <button class="btn btn-primary" routerLink="../continue-shopping">Confirm</button>
+  
+</div>
+
+

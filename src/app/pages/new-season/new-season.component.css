@@ -1,0 +1,74 @@
+.container{
+    transition: all 1s ease-in-out;
+}
+.league-logo{
+    transition: all .1s linear;
+    
+}
+.league-logo:hover{
+    transition: all .1s linear;
+    transform:scale(1.2,1.2);
+}
+.inner-container{
+    display: flex;
+    justify-content: space-evenly;  
+}
+.inner-container div{
+    cursor: pointer;  
+}
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s linear;
+    transition-delay: .7s;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.container-row{
+    display: grid;
+}
+
+
+
+.secondary{
+    width: 50px;
+    height: 50px;
+}
+
+.primary{
+    width: 100px;
+    height: 100px;
+}
+
+.big-md{
+    transform: translateY(150%);
+}
+
+.up-sm{
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .secondary{
+        width: 15px;
+        height: 15px;
+        font-size: x-small;
+    }
+    
+    .primary{
+        width: 25px;
+        height: 25px;
+        font-size: small;
+    }
+    
+  }

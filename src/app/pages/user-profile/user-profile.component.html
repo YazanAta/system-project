@@ -1,0 +1,57 @@
+<section class="vh-100" style="background-color: #f4f5f7;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-lg-6 mb-4 mb-lg-0">
+          <div class="card mb-3" style="border-radius: .5rem;">
+            <div class="row g-0">
+              <div class="col-md-4 gradient-custom text-center text-white"
+                style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                <img src="assets/avatar.png"
+                  alt="Avatar" class="img-fluid mt-5 mb-1" style="width: 100px;" />
+                <h4>Welcome</h4>
+                <h5 style="color: #3E8DE3;">{{thisUser.FirstName}}</h5>
+                
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-4">
+                  <h6>Information</h6>
+                  <hr class="mt-0 mb-4">
+                  <div class="row pt-1">
+                    <div class="col-6 mb-3">
+                      <h6>Email</h6>
+                      <p class="text-muted">{{thisUser.Email}}</p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <h6>Address</h6>
+                      <p class="text-muted">{{thisUser.Address}}</p>
+                    </div>
+                  </div>
+                  <div class="row pt-1">
+                    <div class="col-6 mb-3">
+                      <h6>Phone</h6>
+                      <p class="text-muted">{{thisUser.Phone}}</p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <h6>Best Club</h6>
+                      <p class="text-muted">{{thisUser.Club}}</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" (click)="logOut()">Log out</button>
+                  <button class="btn btn-warning" style="position: absolute; right: 10px;" (click)="generatePdfFile()">My Orders</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <table id="my-table" style="display: none;">
+    <tbody *ngFor ="let order of myOrder">
+        <tr *ngFor = "let order2 of order">
+            <td class="tg-0lax">Order no {{myOrder.indexOf(order)+1}} </td>
+            <td >{{order2.clubName}} {{order2.Type}} {{order2.Price}}$</td>
+        </tr>
+    </tbody>
+  </table>

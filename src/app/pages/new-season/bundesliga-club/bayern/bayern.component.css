@@ -1,0 +1,16 @@
+.container{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+i{
+    color: lightgreen;
+    margin-left: 10px;
+    display: none;
+}
+span{
+    margin-left: 10px;
+    display: none;
+}
+

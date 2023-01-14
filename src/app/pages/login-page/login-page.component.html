@@ -1,0 +1,45 @@
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Go Grinta.</h1>
+		<p>Join Our Website To Get A Special Experince</p>
+		<span>
+			<p>login with social media</p>
+			<a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i>Login with Facebook</a>
+			<a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+		</span>
+		</div>
+	</div>
+	
+	
+		<div class="right m-auto">
+		<h5>Login</h5>
+		<form #f = "ngForm" class="needs-validation" novalidate="">
+			<div class="inputs">
+				<input type="email" placeholder="Email" name="Email" autocomplete="off" required="" class="form-control" ngModel>
+				<div class="invalid-feedback">
+					Please Enter Your Email.
+				</div>
+				<br>
+				<input type="password" placeholder="Password" name="Password" required="" class="form-control" ngModel>
+				<div class="invalid-feedback">
+					Please Enter Your Password.
+				</div>
+			</div>
+		
+			<p class="text-danger m-0 p-0" id="incorrect" style="display: none;">Incorrect Email Or Password</p>
+			<br><br>
+			
+		<div class="remember-me--forget-password">
+				<!-- Angular -->
+	
+			<p>Forget password?</p>
+		</div>
+			
+			<br>
+			<button (click) = "checkUser(f)" >Login</button>
+		</form>
+            <p>Don't have an account? <a routerLink="register-page">Create Your Account</a> it takes less than a minute</p>
+	</div>
+	
+</div>

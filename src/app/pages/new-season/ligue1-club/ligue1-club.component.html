@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Choose the club</h1>
+	<div class="row justify-content-center" >
+		<div class="col-xl-6 col-lg-6 col-sm-6" *ngFor="let cl of club">
+            <div class="inner-container" routerLink= {{cl.route}}>
+                <img src="{{cl.clubImg}}" class="club-logo" alt="Avatar" [style] = "cl.wh">
+                <h3 style="text-align: center;">{{cl.clubName}}</h3>
+            </div>
+        </div>
+	</div>
+</div>

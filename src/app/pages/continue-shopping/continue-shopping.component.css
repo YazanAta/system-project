@@ -1,0 +1,48 @@
+body{
+	background-color: #eee;
+}
+.card{
+	background-color: #fff;
+	width: 340px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.top{
+	background-color: #3F51B5;
+	color: #fff;
+	width: 27px;
+    padding-left: 3px;
+    font-weight: bold;
+}
+.head{
+	color: #3F51B5;
+	font-weight: bold;
+	margin-left: 4px;
+	font-weight: bold;
+}
+.icon1{
+    font-size: 77px !important;
+    color: #4b80b9;
+	
+}
+.icon2{
+	font-size: 77px !important;
+	color: #dee2e6;
+}
+.error{
+	font-size: 17px;
+	color: #3c3e40;
+	font-weight: bold;
+}
+.dwntxt{
+	font-size: 13px;
+	color: #37393a;
+	padding-top: 10px;
+}
+.vrydown{
+	font-size: 8px;
+	text-align: center;
+	color: #000;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}

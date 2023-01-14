@@ -1,0 +1,21 @@
+<div class="row container" >
+    <div class="card col-xl-4 col-lg-4 col-sm-4" style="width: 18rem;" *ngFor="let tp of type">
+        <img class="card-img-top " src="{{tp.Img}}" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title ">{{tp.Type}}</h5>
+        <hr>
+        <p class="card-text price">${{tp.Price}}</p>
+        <form class="mb-2" #f="ngForm">
+            <label for="size">Size:</label><br>
+            <select id="size" name="size" class="form-select form-select-sm mb-3" ngModel required>
+              <option value="Small">Small</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="Large">Large</option>
+            </select>
+        </form> 
+        <a class="btn btn-primary" (click) = "addToCart(tp, f)" >Add to cart</a>
+        <i class="bi bi-check-circle-fill" id="check{{tp.id}}"></i>      
+        <span class="text-danger" id="warning{{tp.id}}">Choose Size</span>    
+    </div>
+    </div>
+</div>

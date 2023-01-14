@@ -1,0 +1,27 @@
+<div class="row justify-content-center m-auto">
+    <div class="card m-3 col-lg-6 col-md-12 p-0" style="max-width: 540px;"  *ngFor="let tp of type">
+        <div class="row g-0 m-auto">
+        <div class="col-md-4"> 
+            <img src={{tp.Img}} class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body pl-1 pb-0 ">
+            <h5 class="card-title">{{tp.clubName}}</h5>
+            <p class="card-text m-0">${{tp.Price}}</p>
+            <form class="mb-1" #f="ngForm">
+                <label for="size">Size:</label><br>
+                <select id="size" name="size" class="form-select form-select-sm mb-3" ngModel required>
+                  <option value="Small">Small</option>
+                  <option value="Medium" selected>Medium</option>
+                  <option value="Large">Large</option>
+                </select>
+            </form> 
+            <a class="btn btn-primary btn-sm" (click) = "addToCart(tp, f)" >Add to cart <i class="bi bi-cart-plus"></i></a>
+            <i class="bi bi-check-circle-fill" id="check{{tp.id}}"></i>      
+            <span class="text-danger" id="warning{{tp.id}}">Choose Size</span>
+
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

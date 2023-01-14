@@ -1,0 +1,18 @@
+.container{
+    transition: all 2s ease;
+}
+.inner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.club-logo{
+    transition: all .1s linear;
+    cursor: pointer;
+}
+.club-logo:hover{
+    
+    transform:scale(.95,.95);
+}

@@ -1,0 +1,39 @@
+
+<div class="container text-center m-auto" [ngClass]="count ? 'up-sm' : 'big-md'">
+    <h5 [ngClass]="{'up-sm' : count}" >Choose The League</h5>
+	<div class="row inner-container" >
+		<div class="col-2 col-md-2" *ngFor="let lg of leagueData" (click)="clickEvent(lg)" >
+            <img src="{{lg.leagueImg}}" class="league-logo" alt="Avatar" [ngClass]="count ? 'secondary' : 'primary'">
+        </div>
+	</div>
+</div>
+<div class="container-row">
+    <app-laliga-club  class="hide"
+    [ngClass]="{'show' : show1()}">
+    </app-laliga-club>
+
+    <app-prl-club
+    class="hide"
+    [ngClass]="{'show' : show2()}">
+    </app-prl-club>
+
+    <app-bundesliga-club
+    class="hide"
+    [ngClass]="{'show' : show3()}">
+
+    </app-bundesliga-club>
+
+    <app-seriea-club
+    class="hide"
+    [ngClass]="{'show' : show4()}"
+    >
+
+    </app-seriea-club>
+
+    <app-ligue1-club
+    class="hide"
+    [ngClass]="{'show' : show5()}"
+    >
+
+    </app-ligue1-club>
+</div>

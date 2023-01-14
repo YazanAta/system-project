@@ -1,0 +1,18 @@
+<div class="row justify-content-around shirts" id="shirts">
+    <h1 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        style="font-family:'Bungee'; text-align: center; margin: 100px auto; color: #FEE715FF;">Shirts</h1>
+
+    <div routerLink={{cd.categoryR}} class="flip-card col-md-4  " *ngFor="let cd of categoryDetails" data-aos="zoom-out-down" data-aos-duration="1000">
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="{{cd.categoryImg}}" alt="Avatar" width="300px" height="300px" style="opacity: 100%;">
+        </div>
+        <div class="flip-card-back" style="padding: 40px;">
+            <h5>{{cd.categoryName}}</h5>
+            <h1 style="color: #062F4F;">Click For Details</h1>           
+        </div>
+        </div>
+    </div>
+</div>
